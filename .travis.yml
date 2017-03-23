@@ -24,13 +24,13 @@ script:
 - xcodebuild -showsdks
 
 # Build Framework in Debug and Run Tests if specified
-- if [ $RUN_TESTS == "YES" ]; then
-xcodebuild -project "$PROJECT" -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO test | xcpretty -c;
-else
-xcodebuild -project "$PROJECT" -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO build | xcpretty -c;
+- if [ $RUN_TESTS == "YES" ]; then \
+xcodebuild -project "$PROJECT" -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO test | xcpretty -c; \
+else \
+xcodebuild -project "$PROJECT" -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO build | xcpretty -c; \
 fi
 
 # Run `pod lib lint` if specified
-- if [ $POD_LINT == "YES" ]; then
-pod lib lint --private --verbose;
+- if [ $POD_LINT == "YES" ]; then \
+pod lib lint --private --verbose; \
 fi
