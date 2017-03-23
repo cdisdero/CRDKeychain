@@ -2,7 +2,7 @@
 Simple straightforward Swift-based keychain access framework for macOS and iOS
 ## Overview
 I recently had a need to create a way to access the macOS and iOS keychain from within a Swift-based app I was developing.  Although there are several extensive libraries out there for this very purpose, I found that they were pretty complex and involved a lot of code.  I needed something that was small and compact and easy to add to any project.  I decided to create my own as a framework that will work in both macOS and iOS projects.
-##Usage
+## Usage
 You can use this library in your project by simply adding these files from the **Shared** folder to your macOS or iOS Swift project:
 
 - CRDKeychain.swift
@@ -14,7 +14,7 @@ To start using the keychain, you can access methods on the singleton:
 
 The shared singleton is automatically setup with your app's bundle identifier as the service name (`kSecAttrService`) for keychain entries and a security setting for entries (`kSecAttrAccessible`) of `kSecAttrAccessibleWhenUnlockedThisDeviceOnly`.
 
-###Methods
+### Methods
 The following methods are available to interact with the keychain:
 
 - `valueFor(key: String, includeData: Bool = false) throws -> CRDKeychainEntry?`
