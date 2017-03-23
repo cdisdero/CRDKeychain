@@ -109,6 +109,8 @@
 		476938691E80CC5D00F20DD9 /* CRDKeychainMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CRDKeychainMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4769386D1E80CC5D00F20DD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		476938771E80CD2100F20DD9 /* CRDKeychainTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CRDKeychainTests.swift; path = SharedTests/CRDKeychainTests.swift; sourceTree = "<group>"; };
+		47B0E87D1E835DFD005A88F8 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		47B0E87F1E835E0B005A88F8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,8 @@
 		476937F61E80C48400F20DD9 = {
 			isa = PBXGroup;
 			children = (
+				47B0E87F1E835E0B005A88F8 /* README.md */,
+				47B0E87D1E835DFD005A88F8 /* LICENSE */,
 				476938141E80C8A600F20DD9 /* Shared */,
 				476938021E80C48400F20DD9 /* CRDKeychainMobile */,
 				4769385C1E80CBAD00F20DD9 /* CRDKeychainMac */,
