@@ -38,5 +38,5 @@ The following methods are available to interact with the keychain:
 ### CRDKeychainEntry
 The methods of CRDKeychain take in and return objects called CRDKeychainEntry objects which are basically just an object representing the properties of a keychain record - things like the account name, description, label, and of course the secret data part of the entry.  See `CRDKeychainEntry.swift` for the available properties and the corresponding keychain attributes they represent.
 
-### Conclusion
+## Conclusion
 I hope this small library/framework is helpful to you in your next Swift project.  I'll be updating as time and inclination permits and of course I welcome all your feedback.
