@@ -1,0 +1,1014 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4769380E1E80C73A00F20DD9 /* CRDKeychainMobile.h in Headers */ = {isa = PBXBuildFile; fileRef = 4769380C1E80C73A00F20DD9 /* CRDKeychainMobile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		476938121E80C89E00F20DD9 /* CRDKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476938101E80C89E00F20DD9 /* CRDKeychain.swift */; };
+		476938131E80C89E00F20DD9 /* CRDKeychainEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476938111E80C89E00F20DD9 /* CRDKeychainEntry.swift */; };
+		4769381E1E80C8EB00F20DD9 /* CRDKeychainMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 476938001E80C48400F20DD9 /* CRDKeychainMobile.framework */; };
+		4769382D1E80C9F000F20DD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4769382C1E80C9F000F20DD9 /* AppDelegate.swift */; };
+		4769382F1E80C9F000F20DD9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4769382E1E80C9F000F20DD9 /* ViewController.swift */; };
+		476938321E80C9F000F20DD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 476938301E80C9F000F20DD9 /* Main.storyboard */; };
+		476938341E80C9F000F20DD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 476938331E80C9F000F20DD9 /* Assets.xcassets */; };
+		476938371E80C9F000F20DD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 476938351E80C9F000F20DD9 /* LaunchScreen.storyboard */; };
+		4769383E1E80CA1C00F20DD9 /* CRDKeychainMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 476938001E80C48400F20DD9 /* CRDKeychainMobile.framework */; };
+		4769383F1E80CA1C00F20DD9 /* CRDKeychainMobile.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 476938001E80C48400F20DD9 /* CRDKeychainMobile.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4769384A1E80CB5B00F20DD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476938491E80CB5B00F20DD9 /* AppDelegate.swift */; };
+		4769384C1E80CB5B00F20DD9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4769384B1E80CB5B00F20DD9 /* ViewController.swift */; };
+		4769384E1E80CB5B00F20DD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4769384D1E80CB5B00F20DD9 /* Assets.xcassets */; };
+		476938511E80CB5B00F20DD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4769384F1E80CB5B00F20DD9 /* Main.storyboard */; };
+		4769385F1E80CBAD00F20DD9 /* CRDKeychainMac.h in Headers */ = {isa = PBXBuildFile; fileRef = 4769385D1E80CBAD00F20DD9 /* CRDKeychainMac.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		476938631E80CBD900F20DD9 /* CRDKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476938101E80C89E00F20DD9 /* CRDKeychain.swift */; };
+		476938641E80CBD900F20DD9 /* CRDKeychainEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476938111E80C89E00F20DD9 /* CRDKeychainEntry.swift */; };
+		4769386E1E80CC5D00F20DD9 /* CRDKeychainMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4769385B1E80CBAD00F20DD9 /* CRDKeychainMac.framework */; };
+		476938781E80CD2100F20DD9 /* CRDKeychainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476938771E80CD2100F20DD9 /* CRDKeychainTests.swift */; };
+		476938791E80CD2B00F20DD9 /* CRDKeychainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476938771E80CD2100F20DD9 /* CRDKeychainTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4769381F1E80C8EB00F20DD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 476937F71E80C48400F20DD9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 476937FF1E80C48400F20DD9;
+			remoteInfo = CRDKeychainMobile;
+		};
+		4769383C1E80CA0A00F20DD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 476937F71E80C48400F20DD9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 476938291E80C9F000F20DD9;
+			remoteInfo = iOSTestApp;
+		};
+		476938401E80CA1C00F20DD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 476937F71E80C48400F20DD9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 476937FF1E80C48400F20DD9;
+			remoteInfo = CRDKeychainMobile;
+		};
+		4769386F1E80CC5D00F20DD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 476937F71E80C48400F20DD9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4769385A1E80CBAD00F20DD9;
+			remoteInfo = CRDKeychainMac;
+		};
+		476938741E80CC6300F20DD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 476937F71E80C48400F20DD9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 476938461E80CB5B00F20DD9;
+			remoteInfo = macOSTestApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		476938421E80CA1C00F20DD9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4769383F1E80CA1C00F20DD9 /* CRDKeychainMobile.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		476938001E80C48400F20DD9 /* CRDKeychainMobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CRDKeychainMobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4769380C1E80C73A00F20DD9 /* CRDKeychainMobile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CRDKeychainMobile.h; path = CRDKeychainMobile/CRDKeychainMobile.h; sourceTree = SOURCE_ROOT; };
+		4769380D1E80C73A00F20DD9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = CRDKeychainMobile/Info.plist; sourceTree = SOURCE_ROOT; };
+		476938101E80C89E00F20DD9 /* CRDKeychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CRDKeychain.swift; path = Shared/CRDKeychain.swift; sourceTree = "<group>"; };
+		476938111E80C89E00F20DD9 /* CRDKeychainEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CRDKeychainEntry.swift; path = Shared/CRDKeychainEntry.swift; sourceTree = "<group>"; };
+		476938191E80C8EB00F20DD9 /* CRDKeychainMobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CRDKeychainMobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4769381D1E80C8EB00F20DD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4769382A1E80C9F000F20DD9 /* iOSTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4769382C1E80C9F000F20DD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4769382E1E80C9F000F20DD9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		476938311E80C9F000F20DD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		476938331E80C9F000F20DD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		476938361E80C9F000F20DD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		476938381E80C9F000F20DD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		476938471E80CB5B00F20DD9 /* macOSTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = macOSTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		476938491E80CB5B00F20DD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4769384B1E80CB5B00F20DD9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4769384D1E80CB5B00F20DD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		476938501E80CB5B00F20DD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		476938521E80CB5B00F20DD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4769385B1E80CBAD00F20DD9 /* CRDKeychainMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CRDKeychainMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4769385D1E80CBAD00F20DD9 /* CRDKeychainMac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRDKeychainMac.h; sourceTree = "<group>"; };
+		4769385E1E80CBAD00F20DD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		476938691E80CC5D00F20DD9 /* CRDKeychainMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CRDKeychainMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4769386D1E80CC5D00F20DD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		476938771E80CD2100F20DD9 /* CRDKeychainTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CRDKeychainTests.swift; path = SharedTests/CRDKeychainTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		476937FC1E80C48400F20DD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		476938161E80C8EB00F20DD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4769381E1E80C8EB00F20DD9 /* CRDKeychainMobile.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		476938271E80C9F000F20DD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4769383E1E80CA1C00F20DD9 /* CRDKeychainMobile.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		476938441E80CB5B00F20DD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		476938571E80CBAD00F20DD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		476938661E80CC5D00F20DD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4769386E1E80CC5D00F20DD9 /* CRDKeychainMac.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		476937F61E80C48400F20DD9 = {
+			isa = PBXGroup;
+			children = (
+				476938141E80C8A600F20DD9 /* Shared */,
+				476938021E80C48400F20DD9 /* CRDKeychainMobile */,
+				4769385C1E80CBAD00F20DD9 /* CRDKeychainMac */,
+				476938761E80CD1100F20DD9 /* SharedTests */,
+				4769381A1E80C8EB00F20DD9 /* CRDKeychainMobileTests */,
+				4769386A1E80CC5D00F20DD9 /* CRDKeychainMacTests */,
+				4769382B1E80C9F000F20DD9 /* iOSTestApp */,
+				476938481E80CB5B00F20DD9 /* macOSTestApp */,
+				476938011E80C48400F20DD9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		476938011E80C48400F20DD9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				476938001E80C48400F20DD9 /* CRDKeychainMobile.framework */,
+				476938191E80C8EB00F20DD9 /* CRDKeychainMobileTests.xctest */,
+				4769382A1E80C9F000F20DD9 /* iOSTestApp.app */,
+				476938471E80CB5B00F20DD9 /* macOSTestApp.app */,
+				4769385B1E80CBAD00F20DD9 /* CRDKeychainMac.framework */,
+				476938691E80CC5D00F20DD9 /* CRDKeychainMacTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		476938021E80C48400F20DD9 /* CRDKeychainMobile */ = {
+			isa = PBXGroup;
+			children = (
+				4769380C1E80C73A00F20DD9 /* CRDKeychainMobile.h */,
+				4769380D1E80C73A00F20DD9 /* Info.plist */,
+			);
+			name = CRDKeychainMobile;
+			path = CRDKeychain;
+			sourceTree = "<group>";
+		};
+		476938141E80C8A600F20DD9 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				476938101E80C89E00F20DD9 /* CRDKeychain.swift */,
+				476938111E80C89E00F20DD9 /* CRDKeychainEntry.swift */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
+		4769381A1E80C8EB00F20DD9 /* CRDKeychainMobileTests */ = {
+			isa = PBXGroup;
+			children = (
+				4769381D1E80C8EB00F20DD9 /* Info.plist */,
+			);
+			path = CRDKeychainMobileTests;
+			sourceTree = "<group>";
+		};
+		4769382B1E80C9F000F20DD9 /* iOSTestApp */ = {
+			isa = PBXGroup;
+			children = (
+				4769382C1E80C9F000F20DD9 /* AppDelegate.swift */,
+				4769382E1E80C9F000F20DD9 /* ViewController.swift */,
+				476938301E80C9F000F20DD9 /* Main.storyboard */,
+				476938331E80C9F000F20DD9 /* Assets.xcassets */,
+				476938351E80C9F000F20DD9 /* LaunchScreen.storyboard */,
+				476938381E80C9F000F20DD9 /* Info.plist */,
+			);
+			path = iOSTestApp;
+			sourceTree = "<group>";
+		};
+		476938481E80CB5B00F20DD9 /* macOSTestApp */ = {
+			isa = PBXGroup;
+			children = (
+				476938491E80CB5B00F20DD9 /* AppDelegate.swift */,
+				4769384B1E80CB5B00F20DD9 /* ViewController.swift */,
+				4769384D1E80CB5B00F20DD9 /* Assets.xcassets */,
+				4769384F1E80CB5B00F20DD9 /* Main.storyboard */,
+				476938521E80CB5B00F20DD9 /* Info.plist */,
+			);
+			path = macOSTestApp;
+			sourceTree = "<group>";
+		};
+		4769385C1E80CBAD00F20DD9 /* CRDKeychainMac */ = {
+			isa = PBXGroup;
+			children = (
+				4769385D1E80CBAD00F20DD9 /* CRDKeychainMac.h */,
+				4769385E1E80CBAD00F20DD9 /* Info.plist */,
+			);
+			path = CRDKeychainMac;
+			sourceTree = "<group>";
+		};
+		4769386A1E80CC5D00F20DD9 /* CRDKeychainMacTests */ = {
+			isa = PBXGroup;
+			children = (
+				4769386D1E80CC5D00F20DD9 /* Info.plist */,
+			);
+			path = CRDKeychainMacTests;
+			sourceTree = "<group>";
+		};
+		476938761E80CD1100F20DD9 /* SharedTests */ = {
+			isa = PBXGroup;
+			children = (
+				476938771E80CD2100F20DD9 /* CRDKeychainTests.swift */,
+			);
+			name = SharedTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		476937FD1E80C48400F20DD9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4769380E1E80C73A00F20DD9 /* CRDKeychainMobile.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		476938581E80CBAD00F20DD9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4769385F1E80CBAD00F20DD9 /* CRDKeychainMac.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		476937FF1E80C48400F20DD9 /* CRDKeychainMobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 476938081E80C48400F20DD9 /* Build configuration list for PBXNativeTarget "CRDKeychainMobile" */;
+			buildPhases = (
+				476937FB1E80C48400F20DD9 /* Sources */,
+				476937FC1E80C48400F20DD9 /* Frameworks */,
+				476937FD1E80C48400F20DD9 /* Headers */,
+				476937FE1E80C48400F20DD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CRDKeychainMobile;
+			productName = CRDKeychain;
+			productReference = 476938001E80C48400F20DD9 /* CRDKeychainMobile.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		476938181E80C8EB00F20DD9 /* CRDKeychainMobileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 476938211E80C8EB00F20DD9 /* Build configuration list for PBXNativeTarget "CRDKeychainMobileTests" */;
+			buildPhases = (
+				476938151E80C8EB00F20DD9 /* Sources */,
+				476938161E80C8EB00F20DD9 /* Frameworks */,
+				476938171E80C8EB00F20DD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				476938201E80C8EB00F20DD9 /* PBXTargetDependency */,
+				4769383D1E80CA0A00F20DD9 /* PBXTargetDependency */,
+			);
+			name = CRDKeychainMobileTests;
+			productName = CRDKeychainMobileTests;
+			productReference = 476938191E80C8EB00F20DD9 /* CRDKeychainMobileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		476938291E80C9F000F20DD9 /* iOSTestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 476938391E80C9F000F20DD9 /* Build configuration list for PBXNativeTarget "iOSTestApp" */;
+			buildPhases = (
+				476938261E80C9F000F20DD9 /* Sources */,
+				476938271E80C9F000F20DD9 /* Frameworks */,
+				476938281E80C9F000F20DD9 /* Resources */,
+				476938421E80CA1C00F20DD9 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				476938411E80CA1C00F20DD9 /* PBXTargetDependency */,
+			);
+			name = iOSTestApp;
+			productName = iOSTestApp;
+			productReference = 4769382A1E80C9F000F20DD9 /* iOSTestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		476938461E80CB5B00F20DD9 /* macOSTestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 476938531E80CB5B00F20DD9 /* Build configuration list for PBXNativeTarget "macOSTestApp" */;
+			buildPhases = (
+				476938431E80CB5B00F20DD9 /* Sources */,
+				476938441E80CB5B00F20DD9 /* Frameworks */,
+				476938451E80CB5B00F20DD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = macOSTestApp;
+			productName = macOSTestApp;
+			productReference = 476938471E80CB5B00F20DD9 /* macOSTestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4769385A1E80CBAD00F20DD9 /* CRDKeychainMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 476938601E80CBAD00F20DD9 /* Build configuration list for PBXNativeTarget "CRDKeychainMac" */;
+			buildPhases = (
+				476938561E80CBAD00F20DD9 /* Sources */,
+				476938571E80CBAD00F20DD9 /* Frameworks */,
+				476938581E80CBAD00F20DD9 /* Headers */,
+				476938591E80CBAD00F20DD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CRDKeychainMac;
+			productName = CRDKeychainMac;
+			productReference = 4769385B1E80CBAD00F20DD9 /* CRDKeychainMac.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		476938681E80CC5D00F20DD9 /* CRDKeychainMacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 476938711E80CC5D00F20DD9 /* Build configuration list for PBXNativeTarget "CRDKeychainMacTests" */;
+			buildPhases = (
+				476938651E80CC5D00F20DD9 /* Sources */,
+				476938661E80CC5D00F20DD9 /* Frameworks */,
+				476938671E80CC5D00F20DD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				476938701E80CC5D00F20DD9 /* PBXTargetDependency */,
+				476938751E80CC6300F20DD9 /* PBXTargetDependency */,
+			);
+			name = CRDKeychainMacTests;
+			productName = CRDKeychainMacTests;
+			productReference = 476938691E80CC5D00F20DD9 /* CRDKeychainMacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		476937F71E80C48400F20DD9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Christopher Disdero";
+				TargetAttributes = {
+					476937FF1E80C48400F20DD9 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4475S8NVSN;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+					476938181E80C8EB00F20DD9 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4475S8NVSN;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 476938291E80C9F000F20DD9;
+					};
+					476938291E80C9F000F20DD9 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4475S8NVSN;
+						ProvisioningStyle = Automatic;
+					};
+					476938461E80CB5B00F20DD9 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4475S8NVSN;
+						ProvisioningStyle = Automatic;
+					};
+					4769385A1E80CBAD00F20DD9 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4475S8NVSN;
+						ProvisioningStyle = Automatic;
+					};
+					476938681E80CC5D00F20DD9 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4475S8NVSN;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 476938461E80CB5B00F20DD9;
+					};
+				};
+			};
+			buildConfigurationList = 476937FA1E80C48400F20DD9 /* Build configuration list for PBXProject "CRDKeychain" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 476937F61E80C48400F20DD9;
+			productRefGroup = 476938011E80C48400F20DD9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				476937FF1E80C48400F20DD9 /* CRDKeychainMobile */,
+				476938181E80C8EB00F20DD9 /* CRDKeychainMobileTests */,
+				4769385A1E80CBAD00F20DD9 /* CRDKeychainMac */,
+				476938681E80CC5D00F20DD9 /* CRDKeychainMacTests */,
+				476938291E80C9F000F20DD9 /* iOSTestApp */,
+				476938461E80CB5B00F20DD9 /* macOSTestApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		476937FE1E80C48400F20DD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		476938171E80C8EB00F20DD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		476938281E80C9F000F20DD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				476938371E80C9F000F20DD9 /* LaunchScreen.storyboard in Resources */,
+				476938341E80C9F000F20DD9 /* Assets.xcassets in Resources */,
+				476938321E80C9F000F20DD9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		476938451E80CB5B00F20DD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4769384E1E80CB5B00F20DD9 /* Assets.xcassets in Resources */,
+				476938511E80CB5B00F20DD9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		476938591E80CBAD00F20DD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		476938671E80CC5D00F20DD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		476937FB1E80C48400F20DD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				476938131E80C89E00F20DD9 /* CRDKeychainEntry.swift in Sources */,
+				476938121E80C89E00F20DD9 /* CRDKeychain.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		476938151E80C8EB00F20DD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				476938781E80CD2100F20DD9 /* CRDKeychainTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		476938261E80C9F000F20DD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4769382F1E80C9F000F20DD9 /* ViewController.swift in Sources */,
+				4769382D1E80C9F000F20DD9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		476938431E80CB5B00F20DD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4769384C1E80CB5B00F20DD9 /* ViewController.swift in Sources */,
+				4769384A1E80CB5B00F20DD9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		476938561E80CBAD00F20DD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				476938641E80CBD900F20DD9 /* CRDKeychainEntry.swift in Sources */,
+				476938631E80CBD900F20DD9 /* CRDKeychain.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		476938651E80CC5D00F20DD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				476938791E80CD2B00F20DD9 /* CRDKeychainTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		476938201E80C8EB00F20DD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 476937FF1E80C48400F20DD9 /* CRDKeychainMobile */;
+			targetProxy = 4769381F1E80C8EB00F20DD9 /* PBXContainerItemProxy */;
+		};
+		4769383D1E80CA0A00F20DD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 476938291E80C9F000F20DD9 /* iOSTestApp */;
+			targetProxy = 4769383C1E80CA0A00F20DD9 /* PBXContainerItemProxy */;
+		};
+		476938411E80CA1C00F20DD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 476937FF1E80C48400F20DD9 /* CRDKeychainMobile */;
+			targetProxy = 476938401E80CA1C00F20DD9 /* PBXContainerItemProxy */;
+		};
+		476938701E80CC5D00F20DD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4769385A1E80CBAD00F20DD9 /* CRDKeychainMac */;
+			targetProxy = 4769386F1E80CC5D00F20DD9 /* PBXContainerItemProxy */;
+		};
+		476938751E80CC6300F20DD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 476938461E80CB5B00F20DD9 /* macOSTestApp */;
+			targetProxy = 476938741E80CC6300F20DD9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		476938301E80C9F000F20DD9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				476938311E80C9F000F20DD9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		476938351E80C9F000F20DD9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				476938361E80C9F000F20DD9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4769384F1E80CB5B00F20DD9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				476938501E80CB5B00F20DD9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		476938061E80C48400F20DD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		476938071E80C48400F20DD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		476938091E80C48400F20DD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4475S8NVSN;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CRDKeychainMobile/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChrisDisdero.CRDKeychainMobile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		4769380A1E80C48400F20DD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4475S8NVSN;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CRDKeychainMobile/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChrisDisdero.CRDKeychainMobile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = NO;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		476938221E80C8EB00F20DD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 4475S8NVSN;
+				INFOPLIST_FILE = CRDKeychainMobileTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChrisDisdero.CRDKeychainMobileTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSTestApp.app/iOSTestApp";
+			};
+			name = Debug;
+		};
+		476938231E80C8EB00F20DD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 4475S8NVSN;
+				INFOPLIST_FILE = CRDKeychainMobileTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChrisDisdero.CRDKeychainMobileTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSTestApp.app/iOSTestApp";
+			};
+			name = Release;
+		};
+		4769383A1E80C9F000F20DD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4475S8NVSN;
+				INFOPLIST_FILE = iOSTestApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChrisDisdero.iOSTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		4769383B1E80C9F000F20DD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4475S8NVSN;
+				INFOPLIST_FILE = iOSTestApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChrisDisdero.iOSTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		476938541E80CB5B00F20DD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4475S8NVSN;
+				INFOPLIST_FILE = macOSTestApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChrisDisdero.macOSTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		476938551E80CB5B00F20DD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4475S8NVSN;
+				INFOPLIST_FILE = macOSTestApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChrisDisdero.macOSTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		476938611E80CBAD00F20DD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4475S8NVSN;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = CRDKeychainMac/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChrisDisdero.CRDKeychainMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = NO;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		476938621E80CBAD00F20DD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4475S8NVSN;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = CRDKeychainMac/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChrisDisdero.CRDKeychainMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = NO;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		476938721E80CC5D00F20DD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4475S8NVSN;
+				INFOPLIST_FILE = CRDKeychainMacTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChrisDisdero.CRDKeychainMacTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/macOSTestApp.app/Contents/MacOS/macOSTestApp";
+			};
+			name = Debug;
+		};
+		476938731E80CC5D00F20DD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4475S8NVSN;
+				INFOPLIST_FILE = CRDKeychainMacTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChrisDisdero.CRDKeychainMacTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/macOSTestApp.app/Contents/MacOS/macOSTestApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		476937FA1E80C48400F20DD9 /* Build configuration list for PBXProject "CRDKeychain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				476938061E80C48400F20DD9 /* Debug */,
+				476938071E80C48400F20DD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		476938081E80C48400F20DD9 /* Build configuration list for PBXNativeTarget "CRDKeychainMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				476938091E80C48400F20DD9 /* Debug */,
+				4769380A1E80C48400F20DD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		476938211E80C8EB00F20DD9 /* Build configuration list for PBXNativeTarget "CRDKeychainMobileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				476938221E80C8EB00F20DD9 /* Debug */,
+				476938231E80C8EB00F20DD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		476938391E80C9F000F20DD9 /* Build configuration list for PBXNativeTarget "iOSTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4769383A1E80C9F000F20DD9 /* Debug */,
+				4769383B1E80C9F000F20DD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		476938531E80CB5B00F20DD9 /* Build configuration list for PBXNativeTarget "macOSTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				476938541E80CB5B00F20DD9 /* Debug */,
+				476938551E80CB5B00F20DD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		476938601E80CBAD00F20DD9 /* Build configuration list for PBXNativeTarget "CRDKeychainMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				476938611E80CBAD00F20DD9 /* Debug */,
+				476938621E80CBAD00F20DD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		476938711E80CC5D00F20DD9 /* Build configuration list for PBXNativeTarget "CRDKeychainMacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				476938721E80CC5D00F20DD9 /* Debug */,
+				476938731E80CC5D00F20DD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 476937F71E80C48400F20DD9 /* Project object */;
+}
