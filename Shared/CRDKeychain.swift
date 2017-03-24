@@ -84,7 +84,7 @@ public class CRDKeychain {
     
     // MARK: - Singleton access
     
-    static let shared = CRDKeychain(service: Bundle.main.bundleIdentifier!)
+    public static let shared = CRDKeychain(service: Bundle.main.bundleIdentifier!)
 
     // MARK: - Initialization
     
