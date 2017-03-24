@@ -83,6 +83,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		475F72C91E84AE2500F60BC2 /* CRDKeychain.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CRDKeychain.podspec; sourceTree = "<group>"; };
 		476938001E80C48400F20DD9 /* CRDKeychainMobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CRDKeychainMobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4769380C1E80C73A00F20DD9 /* CRDKeychainMobile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CRDKeychainMobile.h; path = CRDKeychainMobile/CRDKeychainMobile.h; sourceTree = SOURCE_ROOT; };
 		4769380D1E80C73A00F20DD9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = CRDKeychainMobile/Info.plist; sourceTree = SOURCE_ROOT; };
@@ -166,6 +167,7 @@
 		476937F61E80C48400F20DD9 = {
 			isa = PBXGroup;
 			children = (
+				475F72C91E84AE2500F60BC2 /* CRDKeychain.podspec */,
 				47B0E8811E836754005A88F8 /* .travis.yml */,
 				47B0E87F1E835E0B005A88F8 /* README.md */,
 				47B0E87D1E835DFD005A88F8 /* LICENSE */,
@@ -884,7 +886,7 @@
 				INFOPLIST_FILE = CRDKeychainMac/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ChrisDisdero.CRDKeychainMac;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -907,7 +909,7 @@
 				INFOPLIST_FILE = CRDKeychainMac/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ChrisDisdero.CRDKeychainMac;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
