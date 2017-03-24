@@ -39,7 +39,7 @@ Pod::Spec.new do |s|
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
 
-  s.source       = { :git => "https://github.com/cdisdero/CRDKeychain.git", :tag => "v{s.version}" }
+  s.source       = { :git => "https://github.com/cdisdero/CRDKeychain.git", :tag => "#{s.version}" }
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
