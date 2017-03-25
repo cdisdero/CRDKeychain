@@ -1,6 +1,7 @@
 # CRDKeychain
 [![Build Status](https://travis-ci.org/cdisdero/CRDKeychain.svg?branch=master)](https://travis-ci.org/cdisdero/CRDKeychain)
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/CRDKeychain.svg)](https://img.shields.io/cocoapods/v/CRDKeychain.svg)
+[![Platform](https://img.shields.io/cocoapods/p/CRDKeychain.svg?style=flat)](http://cocoadocs.org/docsets/CRDKeychain)
 
 Simple straightforward Swift-based keychain access framework for macOS and iOS
 
