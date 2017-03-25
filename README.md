@@ -13,7 +13,7 @@ Simple straightforward Swift-based keychain access framework for macOS and iOS
 - [License](#license)
 
 ## Overview
-I recently had a need to create a way to access the macOS and iOS keychain from within a Swift-based app I was developing.  Although there are several extensive libraries out there for this very purpose, I found that they were pretty complex and involved a lot of code.  I needed something that was small and compact and easy to add to any project.  I decided to create my own as a framework that will work in both macOS and iOS projects.
+I recently had a need to create a way to access the macOS and iOS keychain from within a Swift-based app I was developing.  Although there are several comprehensive libraries out there for this very purpose, I found that they were fairly complex and involved a lot of code.  I needed something that was small and compact and easy to add to any project, just by dropping in a few files.  I decided to create my own as a cocoa framework and cocoapod that will work in both macOS and iOS Swift-based projects.
 
 ## Requirements
 - iOS 9.0+ / macOS 10.11+
@@ -25,8 +25,11 @@ You can use this library in your project by simply adding these files from the *
 
 - CRDKeychain.swift
 - CRDKeychainEntry.swift
+- CRDKeychainError.swift
+- CRDKeychainEntryError.swift
 
 ### CocoaPods
+Alternatively, you can install it as a Cocoapod
 
 [CocoaPods](http://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
 
@@ -55,13 +58,24 @@ $ pod install
 ```
 
 ## Usage
-To start using the keychain, you can access methods on the singleton:
+To start using the keychain, you can create a new instance of the `CRDKeychain` object which represents the app's keychain:
 
-`CRDKeychain.shared`
+```
+let keychain: CRDKeychain
+do {
 
-The shared singleton is automatically setup with your app's bundle identifier as the service name (`kSecAttrService`) for keychain entries and a security setting for entries (`kSecAttrAccessible`) of `kSecAttrAccessibleWhenUnlockedThisDeviceOnly`.
+  keychain = try CRDKeychain()
 
-Alternatively, you can install it as a Cocoapod
+} catch let error as NSError {
+
+  print("\(error)")
+}
+```
+
+The default initializer is automatically setup with your app's bundle identifier as the service name (`kSecAttrService`) for all the app keychain entries, nil keychain sharing access group name (`kSecAttrAccessGroup`), and a security setting for entries (`kSecAttrAccessible`) of `kSecAttrAccessibleWhenUnlockedThisDeviceOnly`.
+
+You can pass in one or more of these values to the initializer to override the defaults.
+
 ### Methods
 The following methods are available to interact with the keychain:
 

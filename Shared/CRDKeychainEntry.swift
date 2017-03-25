@@ -22,75 +22,49 @@
 
 import Foundation
 
-enum CRDKeychainEntryError: LocalizedError {
-    
-    // The dictionary representing the keychain element is invalid
-    case invalidKeychainDictionary
-    
-    // The dictionary contained an invalid or missing kSecAttrGeneric attribute.
-    case invalidKey
-    
-    // The keychain element dictionary is missing the kSecAttrCreationDate attribute.
-    case missingCreationDate
-
-    // The keychain element dictionary is missing the kSecAttrModificationDate attribute.
-    case missingModificationDate
-    
-    // Provide localized descriptions of each error case.
-    public var errorDescription: String? {
-        
-        switch self {
-
-        case .invalidKeychainDictionary:
-            return NSLocalizedString("The keychain dictionary is invalid.", comment: "")
-        
-        case .invalidKey:
-            return NSLocalizedString("The key is invalid.", comment: "")
-            
-        case .missingCreationDate:
-            return NSLocalizedString("Creation date is missing.", comment: "")
-            
-        case .missingModificationDate:
-            return NSLocalizedString("Modification date is missing.", comment: "")
-        }
-    }
-}
-
+/**
+ Class that represents an entry in the device keychain.
+ */
 public class CRDKeychainEntry: NSObject {
 
     // MARK: - Public read-only properties
     
-    // The read-only identifier for this entry (kSecAttrGeneric) [non-nil, indexed], created when the instance is initialized.
+    /// The read-only identifier or key for this entry (kSecAttrGeneric) [non-nil, indexed], created when the instance is initialized. This key is used to find keychain entries.
     public let key: String
     
-    // The creation date for this entry from the keychain (kSecAttrCreationDate).
+    /// The creation date for this entry from the keychain (kSecAttrCreationDate) set when the entry is added to the keychain.
     public let creationDate: Date
     
-    // The modification date for this entry from the keychain (kSecAttrModificationDate).
+    /// The modification date for this entry from the keychain (kSecAttrModificationDate) updated when the entry is modified in the keychain.
     public let modificationDate: Date
     
     // MARK: - Public read-write properties
     
-    // The name for this entry (kSecAttrAccount) [indexed].
+    /// The account name for this entry (kSecAttrAccount) if any. [indexed]
     public var account: String? = nil
     
-    // The type description for this entry, if any (kSecAttrDescription).
+    /// The description for this entry, if any (kSecAttrDescription).
     public var desc: String? = nil
 
-    // The label, if any, that the password is associated with (kSecAttrLabel).
+    /// The label for this entry, if any (kSecAttrLabel).
     public var label: String? = nil
 
-    // Notes associated with this entry, if any (kSecAttrComment).
+    /// Notes associated with this entry, if any (kSecAttrComment).
     public var notes: String? = nil
 
-    // The secret data, if any, associated with this entry.
+    /// The secret data, if any, associated with this entry (kSecValueData).
     public var secret: Data? = nil
 
-    // A flag to indicate whether this keychain item should be synchronizable via iCloud Keychain
+    /// A flag to indicate whether this keychain item should be synchronizable via iCloud Keychain (kSecAttrSynchronizable). Set to false by default.
     public var synchronizable: Bool = false
     
     // MARK: - Initialization
     
+    /**
+     Instantiates a new CRDKeychainEntry object that represents a keychain entry with the key specified.
+     
+     - parameter key: The string value for the key used to lookup the entry.
+     */
     public init(key: String) {
         
         // Store the key
@@ -101,6 +75,13 @@ public class CRDKeychainEntry: NSObject {
         self.modificationDate = Date()
     }
     
+    /**
+     Instantiates a new CRDKeychainEntry object that represents a keychain entry using the attributes and key value from a dictionary.
+     
+     - parameter keychainEntry: A dictionary containing at least a key (kSecAttrGeneric), creation date (kSecAttrCreationDate) and modification date (kSecAttrModificationDate).  If data is present (kSecValueData), it is set into the CRDKeychainEntry object.
+     
+     - throws: CRDKeychainEntryError with a case value indicating the type of failure.
+     */
     public init(keychainEntry: NSDictionary) throws {
         
         // Guard against invalid keychain dictionary passed in.

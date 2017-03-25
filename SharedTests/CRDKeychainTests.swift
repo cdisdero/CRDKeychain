@@ -30,18 +30,26 @@ import XCTest
 
 class CRDKeychainTests: XCTestCase {
     
+    var keychain: CRDKeychain? = nil
+    
     override func setUp() {
         
         super.setUp()
 
+        // Setup the keychain
+        do {
+            
+            keychain = try CRDKeychain()
+            
+        } catch let error as NSError {
+            
+            XCTFail("\(error)")
+        }
+
         // Remove all items from the keychain
         do {
             
-            try CRDKeychain.shared.removeAll()
-            
-        } catch let error as CRDKeychainError {
-            
-            XCTFail("\(error)")
+            try keychain?.removeAll()
             
         } catch let error as NSError {
             
@@ -54,11 +62,7 @@ class CRDKeychainTests: XCTestCase {
         // Remove all items from the keychain
         do {
             
-            try CRDKeychain.shared.removeAll()
-            
-        } catch let error as CRDKeychainError {
-            
-            XCTFail("\(error)")
+            try keychain?.removeAll()
             
         } catch let error as NSError {
             
@@ -81,14 +85,14 @@ class CRDKeychainTests: XCTestCase {
             expectedEntry.secret = "this is the data".data(using: .utf8)
 
             // There should be no entry for this key in the keychain.
-            let foundEntry = try CRDKeychain.shared.valueFor(key: "key1")
+            let foundEntry = try keychain?.valueFor(key: "key1")
             XCTAssertNil(foundEntry)
             
             // Add our new entry to the keychain.
-            try CRDKeychain.shared.set(entry: expectedEntry)
+            try keychain?.set(entry: expectedEntry)
             
             // Get the entry just added from the keychain.
-            let actualEntry = try CRDKeychain.shared.valueFor(key: "key1", includeData: true)
+            let actualEntry = try keychain?.valueFor(key: "key1", includeData: true)
             XCTAssertNotNil(actualEntry)
             
             // The entry in the keychain should be equal to the expected entry.
@@ -116,18 +120,18 @@ class CRDKeychainTests: XCTestCase {
             expectedEntry.secret = "this is the data".data(using: .utf8)
             
             // There should be no entry for this key in the keychain.
-            let foundEntry = try CRDKeychain.shared.valueFor(key: "key1")
+            let foundEntry = try keychain?.valueFor(key: "key1")
             XCTAssertNil(foundEntry)
             
             // Add our new entry to the keychain.
-            try CRDKeychain.shared.set(entry: expectedEntry)
+            try keychain?.set(entry: expectedEntry)
             
             // We expect only one entry
-            var entries = try CRDKeychain.shared.getAll()
+            var entries = try keychain?.getAll()
             XCTAssertEqual(entries?.count, 1)
 
             // Get the entry just added from the keychain.
-            var actualEntry = try CRDKeychain.shared.valueFor(key: "key1", includeData: true)
+            var actualEntry = try keychain?.valueFor(key: "key1", includeData: true)
             XCTAssertNotNil(actualEntry)
             
             // The entry in the keychain should be equal to the expected entry.
@@ -143,14 +147,14 @@ class CRDKeychainTests: XCTestCase {
             expectedEntry.notes = "this is the modified comment"
             expectedEntry.secret = "this is the modified data".data(using: .utf8)
             
-            try CRDKeychain.shared.set(entry: expectedEntry)
+            try keychain?.set(entry: expectedEntry)
             
             // We expect only one entry
-            entries = try CRDKeychain.shared.getAll()
+            entries = try keychain?.getAll()
             XCTAssertEqual(entries?.count, 1)
             
             // Get the entry just modified from the keychain.
-            actualEntry = try CRDKeychain.shared.valueFor(key: "key1", includeData: true)
+            actualEntry = try keychain?.valueFor(key: "key1", includeData: true)
             XCTAssertNotNil(actualEntry)
             
             // The entry in the keychain should be equal to the modified entry.
@@ -178,18 +182,18 @@ class CRDKeychainTests: XCTestCase {
             expectedEntry.secret = "this is the data".data(using: .utf8)
             
             // There should be no entry for this key in the keychain.
-            let foundEntry = try CRDKeychain.shared.valueFor(key: "key1")
+            let foundEntry = try keychain?.valueFor(key: "key1")
             XCTAssertNil(foundEntry)
             
             // Add our new entry to the keychain.
-            try CRDKeychain.shared.set(entry: expectedEntry)
+            try keychain?.set(entry: expectedEntry)
             
             // We expect only one entry
-            var entries = try CRDKeychain.shared.getAll()
+            var entries = try keychain?.getAll()
             XCTAssertEqual(entries?.count, 1)
             
             // Get the entry just added from the keychain.
-            var actualEntry = try CRDKeychain.shared.valueFor(key: "key1", includeData: true)
+            var actualEntry = try keychain?.valueFor(key: "key1", includeData: true)
             XCTAssertNotNil(actualEntry)
             
             // The entry in the keychain should be equal to the expected entry.
@@ -199,14 +203,14 @@ class CRDKeychainTests: XCTestCase {
             XCTAssertEqual(actualEntry?.secret, expectedEntry.secret)
             
             // Set the same key again
-            try CRDKeychain.shared.set(entry: expectedEntry)
+            try keychain?.set(entry: expectedEntry)
             
             // We expect only one entry
-            entries = try CRDKeychain.shared.getAll()
+            entries = try keychain?.getAll()
             XCTAssertEqual(entries?.count, 1)
             
             // Get the entry just modified from the keychain.
-            actualEntry = try CRDKeychain.shared.valueFor(key: "key1", includeData: true)
+            actualEntry = try keychain?.valueFor(key: "key1", includeData: true)
             XCTAssertNotNil(actualEntry)
             
             // The entry in the keychain should be equal to the original entry.
@@ -234,15 +238,15 @@ class CRDKeychainTests: XCTestCase {
             expectedEntry.secret = "this is the data".data(using: .utf8)
 
             // There should be no entry for this key in the keychain.
-            var foundEntry = try CRDKeychain.shared.exists(key: "key1")
-            XCTAssertFalse(foundEntry)
+            var foundEntry = try keychain?.exists(key: "key1")
+            XCTAssertFalse(foundEntry!)
 
             // Add our new entry to the keychain.
-            try CRDKeychain.shared.set(entry: expectedEntry)
+            try keychain?.set(entry: expectedEntry)
             
             // The new entry should now exist.
-            foundEntry = try CRDKeychain.shared.exists(key: "key1")
-            XCTAssertTrue(foundEntry)
+            foundEntry = try keychain?.exists(key: "key1")
+            XCTAssertTrue(foundEntry!)
             
         } catch let error as NSError {
             
@@ -254,7 +258,7 @@ class CRDKeychainTests: XCTestCase {
         
         do {
             
-            let results = try CRDKeychain.shared.getAll()
+            let results = try keychain?.getAll()
             XCTAssertNil(results)
             
         } catch let error as NSError {
@@ -276,7 +280,7 @@ class CRDKeychainTests: XCTestCase {
             expectedEntry1.secret = "this is the data".data(using: .utf8)
 
             // Add our new entry to the keychain.
-            try CRDKeychain.shared.set(entry: expectedEntry1)
+            try keychain?.set(entry: expectedEntry1)
 
             // Create a new keychain entry to add to the keychain.
             let expectedEntry2 = CRDKeychainEntry(key: "key2")
@@ -287,10 +291,10 @@ class CRDKeychainTests: XCTestCase {
             expectedEntry2.secret = "this is the data2".data(using: .utf8)
             
             // Add our new entry to the keychain.
-            try CRDKeychain.shared.set(entry: expectedEntry2)
+            try keychain?.set(entry: expectedEntry2)
 
             // Get all the items - we should have two
-            let results = try CRDKeychain.shared.getAll()
+            let results = try keychain?.getAll()
             XCTAssertNotNil(results)
             XCTAssertEqual(results?.count, 2)
 
@@ -317,7 +321,7 @@ class CRDKeychainTests: XCTestCase {
             expectedEntry1.secret = "this is the data".data(using: .utf8)
             
             // Add our new entry to the keychain.
-            try CRDKeychain.shared.set(entry: expectedEntry1)
+            try keychain?.set(entry: expectedEntry1)
             
             // Create a new keychain entry to add to the keychain.
             let expectedEntry2 = CRDKeychainEntry(key: "key2")
@@ -328,13 +332,13 @@ class CRDKeychainTests: XCTestCase {
             expectedEntry2.secret = "this is the data2".data(using: .utf8)
             
             // Add our new entry to the keychain.
-            try CRDKeychain.shared.set(entry: expectedEntry2)
+            try keychain?.set(entry: expectedEntry2)
             
             // Remove the second one added
-            try CRDKeychain.shared.remove(key: expectedEntry2.key)
+            try keychain?.remove(key: expectedEntry2.key)
             
             // Get all the items - we should have one
-            let results = try CRDKeychain.shared.getAll()
+            let results = try keychain?.getAll()
             XCTAssertNotNil(results)
             XCTAssertEqual(results?.count, 1)
             
@@ -360,7 +364,7 @@ class CRDKeychainTests: XCTestCase {
             expectedEntry1.secret = "this is the data".data(using: .utf8)
             
             // Add our new entry to the keychain.
-            try CRDKeychain.shared.set(entry: expectedEntry1)
+            try keychain?.set(entry: expectedEntry1)
             
             // Create a new keychain entry to add to the keychain.
             let expectedEntry2 = CRDKeychainEntry(key: "key2")
@@ -371,13 +375,13 @@ class CRDKeychainTests: XCTestCase {
             expectedEntry2.secret = "this is the data2".data(using: .utf8)
             
             // Add our new entry to the keychain.
-            try CRDKeychain.shared.set(entry: expectedEntry2)
+            try keychain?.set(entry: expectedEntry2)
             
             // Remove non-existant key
-            try CRDKeychain.shared.remove(key: "blippo")
+            try keychain?.remove(key: "blippo")
             
             // Get all the items - we should have one
-            let results = try CRDKeychain.shared.getAll()
+            let results = try keychain?.getAll()
             XCTAssertNotNil(results)
             XCTAssertEqual(results?.count, 2)
             
@@ -396,10 +400,10 @@ class CRDKeychainTests: XCTestCase {
         do {
             
             // Remove non-existant key from empty keychain
-            try CRDKeychain.shared.remove(key: "blippo")
+            try keychain?.remove(key: "blippo")
             
             // Get all the items - we should have one
-            let results = try CRDKeychain.shared.getAll()
+            let results = try keychain?.getAll()
             XCTAssertNil(results)
             
         } catch let error as NSError {

@@ -28,6 +28,10 @@
 		4769386E1E80CC5D00F20DD9 /* CRDKeychainMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4769385B1E80CBAD00F20DD9 /* CRDKeychainMac.framework */; };
 		476938781E80CD2100F20DD9 /* CRDKeychainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476938771E80CD2100F20DD9 /* CRDKeychainTests.swift */; };
 		476938791E80CD2B00F20DD9 /* CRDKeychainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476938771E80CD2100F20DD9 /* CRDKeychainTests.swift */; };
+		478735231E8603AE00D2C106 /* CRDKeychainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478735221E8603AE00D2C106 /* CRDKeychainError.swift */; };
+		478735241E8603AE00D2C106 /* CRDKeychainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478735221E8603AE00D2C106 /* CRDKeychainError.swift */; };
+		478735261E86040100D2C106 /* CRDKeychainEntryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478735251E86040100D2C106 /* CRDKeychainEntryError.swift */; };
+		478735271E86040100D2C106 /* CRDKeychainEntryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478735251E86040100D2C106 /* CRDKeychainEntryError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +114,8 @@
 		476938691E80CC5D00F20DD9 /* CRDKeychainMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CRDKeychainMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4769386D1E80CC5D00F20DD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		476938771E80CD2100F20DD9 /* CRDKeychainTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CRDKeychainTests.swift; path = SharedTests/CRDKeychainTests.swift; sourceTree = "<group>"; };
+		478735221E8603AE00D2C106 /* CRDKeychainError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CRDKeychainError.swift; path = Shared/CRDKeychainError.swift; sourceTree = "<group>"; };
+		478735251E86040100D2C106 /* CRDKeychainEntryError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CRDKeychainEntryError.swift; path = Shared/CRDKeychainEntryError.swift; sourceTree = "<group>"; };
 		47B0E87D1E835DFD005A88F8 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		47B0E87F1E835E0B005A88F8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		47B0E8811E836754005A88F8 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
@@ -211,6 +217,8 @@
 			children = (
 				476938101E80C89E00F20DD9 /* CRDKeychain.swift */,
 				476938111E80C89E00F20DD9 /* CRDKeychainEntry.swift */,
+				478735221E8603AE00D2C106 /* CRDKeychainError.swift */,
+				478735251E86040100D2C106 /* CRDKeychainEntryError.swift */,
 			);
 			name = Shared;
 			sourceTree = "<group>";
@@ -531,6 +539,8 @@
 			files = (
 				476938131E80C89E00F20DD9 /* CRDKeychainEntry.swift in Sources */,
 				476938121E80C89E00F20DD9 /* CRDKeychain.swift in Sources */,
+				478735231E8603AE00D2C106 /* CRDKeychainError.swift in Sources */,
+				478735261E86040100D2C106 /* CRDKeychainEntryError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -566,6 +576,8 @@
 			files = (
 				476938641E80CBD900F20DD9 /* CRDKeychainEntry.swift in Sources */,
 				476938631E80CBD900F20DD9 /* CRDKeychain.swift in Sources */,
+				478735241E8603AE00D2C106 /* CRDKeychainError.swift in Sources */,
+				478735271E86040100D2C106 /* CRDKeychainEntryError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
