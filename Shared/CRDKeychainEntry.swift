@@ -61,12 +61,20 @@ public class CRDKeychainEntry: NSObject {
     // MARK: - Initialization
     
     /**
-     Instantiates a new CRDKeychainEntry object that represents a keychain entry with the key specified.
+     Instantiates a new CRDKeychainEntry object that represents a new keychain entry with the key specified.
      
      - parameter key: The string value for the key used to lookup the entry.
+
+     - throws: CRDKeychainEntryError with a case value indicating the type of failure.
      */
-    public init(key: String) {
+    public init(key: String) throws {
         
+        // Guard against invalid key passed in.
+        guard !key.isEmpty else {
+            
+            throw CRDKeychainEntryError.invalidKey
+        }
+
         // Store the key
         self.key = key
         

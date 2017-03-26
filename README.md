@@ -21,12 +21,19 @@ I recently had a need to create a way to access the macOS and iOS keychain from 
 - Swift 3.0+
 
 ## Installation
-You can use this library in your project by simply adding these files from the **Shared** folder to your macOS or iOS Swift project:
+You can use this code library in your project by simply adding these files from the **Shared** folder to your macOS or iOS Swift project:
 
 - CRDKeychain.swift
+  * This file defines the CRDKeychain object and the methods for getting, setting, and removing entries from the keychain.
+
 - CRDKeychainEntry.swift
+  * This file defines the CRDKeychainEntry object which represents a keychain entry and it's various attributes. Methods in CRDKeychain use this object as the input or output.
+
 - CRDKeychainError.swift
+  * This file defines the errors that can be thrown from the `init()` and other methods in CRDKeychain.
+
 - CRDKeychainEntryError.swift
+  * This file defines the errors that can be thrown from the `init()` for CRDKeychainEntry.
 
 ### CocoaPods
 Alternatively, you can install it as a Cocoapod
@@ -99,6 +106,86 @@ The following methods are available to interact with the keychain:
 
 ### CRDKeychainEntry
 The methods of CRDKeychain take in and return objects called CRDKeychainEntry objects which are basically just an object representing the properties of a keychain record - things like the account name, description, label, and of course the secret data part of the entry.  See `CRDKeychainEntry.swift` for the available properties and the corresponding keychain attributes they represent.
+
+### Basic operations
+To add a new keychain entry:
+
+```
+do {
+
+  // Create a new keychain entry to add to the keychain.
+  let expectedEntry = CRDKeychainEntry(key: "key1")
+  expectedEntry.account = "account1"
+  expectedEntry.label = "label1"
+  expectedEntry.desc = "this is the description"
+  expectedEntry.notes = "this is the comment"
+  expectedEntry.secret = "this is the data".data(using: .utf8)
+
+  // Add our new entry to the keychain.
+  try keychain?.set(entry: expectedEntry)            
+
+} catch let error as NSError {
+
+  print("\(error)")
+}
+```
+
+To get an existing entry from the keychain:
+
+```
+do {
+
+  // Get the entry just added, including the data.
+  var entryFound = try keychain?.valueFor(key: "key1", includeData: true)
+
+} catch let error as NSError {
+
+  print("\(error)")
+}
+```
+
+To update an entry, just modify the attributes of an entry obtained by `valueFor` and call the `set` method passing the modified `CRDKeychainEntry`:
+
+```
+do {
+
+  // Get the entry just added, including the data.
+  var entryFound = try keychain?.valueFor(key: "key1", includeData: true)
+
+  // Modify the entry
+  entryFound.account = "account2"
+  entryFound.label = "label2"
+  entryFound.desc = "this is the modified description"
+  entryFound.notes = "this is the modified comment"
+  entryFound.secret = "this is the modified data".data(using: .utf8)
+
+  // Save the modified entry, replacing the original in the keychain.
+  try keychain?.set(entry: entryFound)
+
+} catch let error as NSError {
+
+  print("\(error)")
+}
+```
+
+To remove an entry, just call the `remove` method with the key of the entry you wish to remove:
+
+```
+do {
+
+  // Remove the entry previously modified.
+  try keychain?.remove(key: "key1")
+
+} catch let error as NSError {
+
+  print("\(error)")
+}
+```
+
+You can also use the `getAll(includeData: Bool = false)` method to retrieve all the entries in the keychain, if any, optionally including the data for each entry; the `removeAll()` method to remove all the entries; and `exists(key: String)` to test whether a key has an entry in the keychain.
+
+The reason why `includeData` parameter is an option and defaults to false when getting entries from the keychain is that retrieving the data along with the attributes of an entry is a little slower than just retrieving the attributes. Typically you just want to get the attributes of entries only, such as when displaying some of the attributes in a table view or collection view. Retrieve the data only when you want to work with it directly.
+
 
 ## Conclusion
 I hope this small library/framework is helpful to you in your next Swift project.  I'll be updating as time and inclination permits and of course I welcome all your feedback.

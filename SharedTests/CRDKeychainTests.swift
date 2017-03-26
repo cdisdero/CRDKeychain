@@ -77,7 +77,7 @@ class CRDKeychainTests: XCTestCase {
         do {
             
             // Create a new keychain entry to add to the keychain.
-            let expectedEntry = CRDKeychainEntry(key: "key1")
+            let expectedEntry = try CRDKeychainEntry(key: "key1")
             expectedEntry.account = "account1"
             expectedEntry.label = "label1"
             expectedEntry.desc = "this is the description"
@@ -112,7 +112,7 @@ class CRDKeychainTests: XCTestCase {
         do {
             
             // Create a new keychain entry to add to the keychain.
-            let expectedEntry = CRDKeychainEntry(key: "key1")
+            let expectedEntry = try CRDKeychainEntry(key: "key1")
             expectedEntry.account = "account1"
             expectedEntry.label = "label1"
             expectedEntry.desc = "this is the description"
@@ -174,7 +174,7 @@ class CRDKeychainTests: XCTestCase {
         do {
             
             // Create a new keychain entry to add to the keychain.
-            let expectedEntry = CRDKeychainEntry(key: "key1")
+            let expectedEntry = try CRDKeychainEntry(key: "key1")
             expectedEntry.account = "account1"
             expectedEntry.label = "label1"
             expectedEntry.desc = "this is the description"
@@ -230,7 +230,7 @@ class CRDKeychainTests: XCTestCase {
         do {
             
             // Create a new keychain entry to add to the keychain.
-            let expectedEntry = CRDKeychainEntry(key: "key1")
+            let expectedEntry = try CRDKeychainEntry(key: "key1")
             expectedEntry.account = "account1"
             expectedEntry.label = "label1"
             expectedEntry.desc = "this is the description"
@@ -272,7 +272,7 @@ class CRDKeychainTests: XCTestCase {
         do {
             
             // Create a new keychain entry to add to the keychain.
-            let expectedEntry1 = CRDKeychainEntry(key: "key1")
+            let expectedEntry1 = try CRDKeychainEntry(key: "key1")
             expectedEntry1.account = "account1"
             expectedEntry1.label = "label1"
             expectedEntry1.desc = "this is the description"
@@ -283,7 +283,7 @@ class CRDKeychainTests: XCTestCase {
             try keychain?.set(entry: expectedEntry1)
 
             // Create a new keychain entry to add to the keychain.
-            let expectedEntry2 = CRDKeychainEntry(key: "key2")
+            let expectedEntry2 = try CRDKeychainEntry(key: "key2")
             expectedEntry2.account = "account2"
             expectedEntry2.label = "label2"
             expectedEntry2.desc = "this is the description2"
@@ -313,7 +313,7 @@ class CRDKeychainTests: XCTestCase {
         do {
             
             // Create a new keychain entry to add to the keychain.
-            let expectedEntry1 = CRDKeychainEntry(key: "key1")
+            let expectedEntry1 = try CRDKeychainEntry(key: "key1")
             expectedEntry1.account = "account1"
             expectedEntry1.label = "label1"
             expectedEntry1.desc = "this is the description"
@@ -324,7 +324,7 @@ class CRDKeychainTests: XCTestCase {
             try keychain?.set(entry: expectedEntry1)
             
             // Create a new keychain entry to add to the keychain.
-            let expectedEntry2 = CRDKeychainEntry(key: "key2")
+            let expectedEntry2 = try CRDKeychainEntry(key: "key2")
             expectedEntry2.account = "account2"
             expectedEntry2.label = "label2"
             expectedEntry2.desc = "this is the description2"
@@ -356,7 +356,7 @@ class CRDKeychainTests: XCTestCase {
         do {
             
             // Create a new keychain entry to add to the keychain.
-            let expectedEntry1 = CRDKeychainEntry(key: "key1")
+            let expectedEntry1 = try CRDKeychainEntry(key: "key1")
             expectedEntry1.account = "account1"
             expectedEntry1.label = "label1"
             expectedEntry1.desc = "this is the description"
@@ -367,7 +367,7 @@ class CRDKeychainTests: XCTestCase {
             try keychain?.set(entry: expectedEntry1)
             
             // Create a new keychain entry to add to the keychain.
-            let expectedEntry2 = CRDKeychainEntry(key: "key2")
+            let expectedEntry2 = try CRDKeychainEntry(key: "key2")
             expectedEntry2.account = "account2"
             expectedEntry2.label = "label2"
             expectedEntry2.desc = "this is the description2"
