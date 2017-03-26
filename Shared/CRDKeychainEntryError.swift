@@ -25,7 +25,7 @@ import Foundation
 /**
  Errors that occur for operations in the *CRDKeychainEntry* class.
  */
-enum CRDKeychainEntryError: LocalizedError {
+public enum CRDKeychainEntryError: LocalizedError {
     
     // MARK: - Error cases
 
