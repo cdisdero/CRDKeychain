@@ -52,13 +52,13 @@ public class CRDKeychain {
     public init(service: String = Bundle.main.bundleIdentifier!, accessGroup: String? = nil, accessible: String = kSecAttrAccessibleWhenUnlockedThisDeviceOnly as String) throws {
         
         // Ensure the service name specified is not empty.
-        guard !service.isEmpty else {
+        guard !service.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty else {
         
             throw CRDKeychainError.invalidServiceName
         }
         
         // Ensure the accessible attribute is valid.
-        guard !accessible.isEmpty && (
+        guard !accessible.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty && (
             accessible.compare(kSecAttrAccessibleAfterFirstUnlock as String) == .orderedSame ||
             accessible.compare(kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly as String) == .orderedSame ||
             accessible.compare(kSecAttrAccessibleAlways as String) == .orderedSame ||
@@ -74,7 +74,7 @@ public class CRDKeychain {
         // Ensure the access group, if specified, is not empty.
         if accessGroup != nil {
             
-            guard let accessGroup = accessGroup, !accessGroup.isEmpty else {
+            guard let accessGroup = accessGroup, !accessGroup.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty else {
                 
                 throw CRDKeychainError.invalidAccessGroup
             }
@@ -377,7 +377,12 @@ public class CRDKeychain {
         // Form the query for all keychain items.
         var query: [String: AnyObject] = [
             kSecAttrService as String : self.service as AnyObject,
-            kSecClass       as String : kSecClassGenericPassword ]
+            kSecClass       as String : kSecClassGenericPassword]
+        
+        // On macOS it seems like passing the kSecMatchLimit is necessary to get all of the entries that match - not just the first one.  However, passing this attribute on iOS will cause errors, so we won't do that.
+        #if os(OSX)
+            query[kSecMatchLimit as String] = kSecMatchLimitAll
+        #endif // OSX
         
         // If a non-nil access group was specified, put it in the query.
         if let accessGroup = self.accessGroup {

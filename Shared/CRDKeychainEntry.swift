@@ -70,7 +70,7 @@ public class CRDKeychainEntry: NSObject {
     public init(key: String) throws {
         
         // Guard against invalid key passed in.
-        guard !key.isEmpty else {
+        guard !key.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty else {
             
             throw CRDKeychainEntryError.invalidKey
         }
@@ -111,7 +111,7 @@ public class CRDKeychainEntry: NSObject {
         }
         
         // Guard against invalid information in the dictionary passed in.
-        guard let useKey = key else {
+        guard let useKey = key, !useKey.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty else {
             
             throw CRDKeychainEntryError.invalidKey
         }

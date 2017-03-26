@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "CRDKeychain"
-  s.version      = "1.0.3"
+  s.version      = "1.0.4"
   s.summary      = "Simple straightforward Swift-based keychain access framework for macOS and iOS"
   s.description  = <<-DESC
 I recently had a need to create a way to access the macOS and iOS keychain from within a Swift-based app I was developing.  Although there are several comprehensive libraries out there for this very purpose, I found that they were fairly complex and involved a lot of code.  I needed something that was small and compact and easy to add to any project, just by dropping in a few files.  I decided to create my own as a cocoa framework and cocoapod that will work in both macOS and iOS Swift-based projects.
