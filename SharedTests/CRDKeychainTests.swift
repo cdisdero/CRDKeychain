@@ -26,6 +26,8 @@ import XCTest
     @testable import CRDKeychainMac
 #elseif os(iOS)
     @testable import CRDKeychainMobile
+#elseif os(tvOS)
+    @testable import CRDKeychainTV
 #endif
 
 class CRDKeychainTests: XCTestCase {

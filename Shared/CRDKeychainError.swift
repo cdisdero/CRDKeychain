@@ -65,7 +65,7 @@ public enum CRDKeychainError: LocalizedError {
                 // On macOS, we can call this method to return the localized description of the status.
                 return SecCopyErrorMessageString(status, nil) as String?
             
-            #elseif os(iOS)
+            #elseif os(iOS) || os(watchOS) || os(tvOS)
                 
                 // On iOS, SecCopyErrorMessageString is not available, so instead return localized descriptions of some of the most common statuses.
                 switch status {

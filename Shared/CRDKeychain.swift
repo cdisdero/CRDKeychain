@@ -222,15 +222,31 @@ public class CRDKeychain {
         // Try to find the entry key
         if try self.exists(key: entry.key) {
 
-            // If found, form an update dictionary of attribute values from the specified entry.
-            let updateDictionary: [String: AnyObject] = [
-                kSecAttrAccount as String : (entry.account ?? "") as AnyObject,
-                kSecAttrDescription as String: (entry.desc ?? "") as AnyObject,
-                kSecAttrLabel as String: (entry.label ?? "") as AnyObject,
-                kSecAttrComment as String: (entry.notes ?? "") as AnyObject,
-                kSecValueData as String: entry.secret as AnyObject,
-                kSecAttrSynchronizable as String: entry.synchronizable ? kCFBooleanTrue : kCFBooleanFalse
-            ]
+            // kSecAttrSynchronizable is not available on watchOS
+            #if os(watchOS)
+
+                // If found, form an update dictionary of attribute values from the specified entry.
+                let updateDictionary: [String: AnyObject] = [
+                    kSecAttrAccount as String : (entry.account ?? "") as AnyObject,
+                    kSecAttrDescription as String: (entry.desc ?? "") as AnyObject,
+                    kSecAttrLabel as String: (entry.label ?? "") as AnyObject,
+                    kSecAttrComment as String: (entry.notes ?? "") as AnyObject,
+                    kSecValueData as String: entry.secret as AnyObject
+                ]
+
+            #else
+
+                // If found, form an update dictionary of attribute values from the specified entry.
+                let updateDictionary: [String: AnyObject] = [
+                    kSecAttrAccount as String : (entry.account ?? "") as AnyObject,
+                    kSecAttrDescription as String: (entry.desc ?? "") as AnyObject,
+                    kSecAttrLabel as String: (entry.label ?? "") as AnyObject,
+                    kSecAttrComment as String: (entry.notes ?? "") as AnyObject,
+                    kSecValueData as String: entry.secret as AnyObject,
+                    kSecAttrSynchronizable as String: entry.synchronizable ? kCFBooleanTrue : kCFBooleanFalse
+                ]
+
+            #endif
             
             // Update the existing keychain item with these new attribute values.
             status = SecItemUpdate(query as CFDictionary, updateDictionary as CFDictionary)
@@ -244,8 +260,12 @@ public class CRDKeychain {
             query[kSecAttrLabel as String] = (entry.label ?? "") as AnyObject?
             query[kSecAttrComment as String] = (entry.notes ?? "") as AnyObject?
             query[kSecValueData as String] = entry.secret as AnyObject?
+            
+            // kSecAttrSynchronizable is not available on watchOS
+            #if os(iOS) || os(macOS) || os(tvOS)
             query[kSecAttrSynchronizable as String] = entry.synchronizable ? kCFBooleanTrue : kCFBooleanFalse
-
+            #endif
+                
             // Add the entry specified to the keychain.
             status = SecItemAdd(query as CFDictionary, nil)
         }

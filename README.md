@@ -3,7 +3,7 @@
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/CRDKeychain.svg)](https://img.shields.io/cocoapods/v/CRDKeychain.svg)
 [![Platform](https://img.shields.io/cocoapods/p/CRDKeychain.svg?style=flat)](http://cocoadocs.org/docsets/CRDKeychain)
 
-Simple straightforward Swift-based keychain access framework for macOS and iOS
+Simple straightforward Swift-based keychain access framework for iOS, macOS, watchOS, and tvOS
 
 - [Overview](#overview)
 - [Requirements](#requirements)
@@ -13,15 +13,15 @@ Simple straightforward Swift-based keychain access framework for macOS and iOS
 - [License](#license)
 
 ## Overview
-I recently had a need to create a way to access the macOS and iOS keychain from within a Swift-based app I was developing.  Although there are several comprehensive libraries out there for this very purpose, I found that they were fairly complex and involved a lot of code.  I needed something that was small and compact and easy to add to any project, just by dropping in a few files.  I decided to create my own as a cocoa framework and cocoapod that will work in both macOS and iOS Swift-based projects.
+I recently had a need to create a way to access the Apple keychain from within a Swift-based app I was developing.  Although there are several comprehensive libraries out there for this very purpose, I found that they were fairly complex and involved a lot of code.  I needed something that was small and compact and easy to add to any project, just by dropping in a few files.  I decided to create my own as a cocoa framework and cocoapod that will work with a consistent interface across iOS, macOS, watchOS, and tvOS Swift-based projects.
 
 ## Requirements
-- iOS 9.0+ / macOS 10.11+
+- iOS 9.0+ / macOS 10.11+ / watchOS 3.0+ / tvOS 9.0+
 - Xcode 8.2+
 - Swift 3.0+
 
 ## Installation
-You can use this code library in your project by simply adding these files from the **Shared** folder to your macOS or iOS Swift project:
+You can use this code library in your project by simply adding these files from the **Shared** folder to your Swift project:
 
 - CRDKeychain.swift
   * This file defines the CRDKeychain object and the methods for getting, setting, and removing entries from the keychain.
@@ -186,6 +186,7 @@ You can also use the `getAll(includeData: Bool = false)` method to retrieve all 
 
 The reason why `includeData` parameter is an option and defaults to false when getting entries from the keychain is that retrieving the data along with the attributes of an entry is a little slower than just retrieving the attributes. Typically you just want to get the attributes of entries only, such as when displaying some of the attributes in a table view or collection view. Retrieve the data only when you want to work with it directly.
 
+Note that because `kSecAttrSynchronizable` is not available on watchOS, setting the `synchronizable` property of a CRDKeychainEntry object will have no effect on this platform.
 
 ## Conclusion
 I hope this small library/framework is helpful to you in your next Swift project.  I'll be updating as time and inclination permits and of course I welcome all your feedback.

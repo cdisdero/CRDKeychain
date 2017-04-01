@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4739A2F81E904B1E00723846 /* CRDKeychainWatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 4739A2F61E904B1E00723846 /* CRDKeychainWatch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4739A3051E904D0700723846 /* CRDKeychainTV.h in Headers */ = {isa = PBXBuildFile; fileRef = 4739A3031E904D0700723846 /* CRDKeychainTV.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4739A3091E904D3400723846 /* CRDKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476938101E80C89E00F20DD9 /* CRDKeychain.swift */; };
+		4739A30A1E904D3400723846 /* CRDKeychainEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476938111E80C89E00F20DD9 /* CRDKeychainEntry.swift */; };
+		4739A30B1E904D3400723846 /* CRDKeychainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478735221E8603AE00D2C106 /* CRDKeychainError.swift */; };
+		4739A30C1E904D3400723846 /* CRDKeychainEntryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478735251E86040100D2C106 /* CRDKeychainEntryError.swift */; };
+		4739A30D1E904D3500723846 /* CRDKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476938101E80C89E00F20DD9 /* CRDKeychain.swift */; };
+		4739A30E1E904D3500723846 /* CRDKeychainEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476938111E80C89E00F20DD9 /* CRDKeychainEntry.swift */; };
+		4739A30F1E904D3500723846 /* CRDKeychainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478735221E8603AE00D2C106 /* CRDKeychainError.swift */; };
+		4739A3101E904D3500723846 /* CRDKeychainEntryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478735251E86040100D2C106 /* CRDKeychainEntryError.swift */; };
+		4739A31A1E904D8E00723846 /* CRDKeychainTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4739A3011E904D0700723846 /* CRDKeychainTV.framework */; };
+		4739A3211E904DBA00723846 /* CRDKeychainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476938771E80CD2100F20DD9 /* CRDKeychainTests.swift */; };
+		4739A3291E904E2B00723846 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4739A3281E904E2B00723846 /* AppDelegate.swift */; };
+		4739A32B1E904E2B00723846 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4739A32A1E904E2B00723846 /* ViewController.swift */; };
+		4739A32E1E904E2B00723846 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4739A32C1E904E2B00723846 /* Main.storyboard */; };
+		4739A3301E904E2B00723846 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4739A32F1E904E2B00723846 /* Assets.xcassets */; };
 		4769380E1E80C73A00F20DD9 /* CRDKeychainMobile.h in Headers */ = {isa = PBXBuildFile; fileRef = 4769380C1E80C73A00F20DD9 /* CRDKeychainMobile.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		476938121E80C89E00F20DD9 /* CRDKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476938101E80C89E00F20DD9 /* CRDKeychain.swift */; };
 		476938131E80C89E00F20DD9 /* CRDKeychainEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476938111E80C89E00F20DD9 /* CRDKeychainEntry.swift */; };
@@ -35,6 +51,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		4739A31B1E904D8E00723846 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 476937F71E80C48400F20DD9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4739A3001E904D0700723846;
+			remoteInfo = CRDKeychainTV;
+		};
 		4769381F1E80C8EB00F20DD9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 476937F71E80C48400F20DD9 /* Project object */;
@@ -70,6 +93,13 @@
 			remoteGlobalIDString = 476938461E80CB5B00F20DD9;
 			remoteInfo = macOSTestApp;
 		};
+		477AD4A11E904EEB00ACD4E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 476937F71E80C48400F20DD9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4739A3251E904E2B00723846;
+			remoteInfo = tvOSTestApp;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -87,6 +117,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4739A2F41E904B1E00723846 /* CRDKeychainWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CRDKeychainWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4739A2F61E904B1E00723846 /* CRDKeychainWatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRDKeychainWatch.h; sourceTree = "<group>"; };
+		4739A2F71E904B1E00723846 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4739A3011E904D0700723846 /* CRDKeychainTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CRDKeychainTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4739A3031E904D0700723846 /* CRDKeychainTV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRDKeychainTV.h; sourceTree = "<group>"; };
+		4739A3041E904D0700723846 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4739A3151E904D8D00723846 /* CRDKeychainTVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CRDKeychainTVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4739A3191E904D8E00723846 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4739A3261E904E2B00723846 /* tvOSTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tvOSTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4739A3281E904E2B00723846 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4739A32A1E904E2B00723846 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4739A32D1E904E2B00723846 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4739A32F1E904E2B00723846 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4739A3311E904E2B00723846 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		475F72C91E84AE2500F60BC2 /* CRDKeychain.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CRDKeychain.podspec; sourceTree = "<group>"; };
 		476938001E80C48400F20DD9 /* CRDKeychainMobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CRDKeychainMobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4769380C1E80C73A00F20DD9 /* CRDKeychainMobile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CRDKeychainMobile.h; path = CRDKeychainMobile/CRDKeychainMobile.h; sourceTree = SOURCE_ROOT; };
@@ -122,6 +166,35 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4739A2F01E904B1E00723846 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4739A2FD1E904D0700723846 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4739A3121E904D8D00723846 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4739A31A1E904D8E00723846 /* CRDKeychainTV.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4739A3231E904E2B00723846 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		476937FC1E80C48400F20DD9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -170,6 +243,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4739A2F51E904B1E00723846 /* CRDKeychainWatch */ = {
+			isa = PBXGroup;
+			children = (
+				4739A2F61E904B1E00723846 /* CRDKeychainWatch.h */,
+				4739A2F71E904B1E00723846 /* Info.plist */,
+			);
+			path = CRDKeychainWatch;
+			sourceTree = "<group>";
+		};
+		4739A3021E904D0700723846 /* CRDKeychainTV */ = {
+			isa = PBXGroup;
+			children = (
+				4739A3031E904D0700723846 /* CRDKeychainTV.h */,
+				4739A3041E904D0700723846 /* Info.plist */,
+			);
+			path = CRDKeychainTV;
+			sourceTree = "<group>";
+		};
+		4739A3161E904D8E00723846 /* CRDKeychainTVTests */ = {
+			isa = PBXGroup;
+			children = (
+				4739A3191E904D8E00723846 /* Info.plist */,
+			);
+			path = CRDKeychainTVTests;
+			sourceTree = "<group>";
+		};
+		4739A3271E904E2B00723846 /* tvOSTestApp */ = {
+			isa = PBXGroup;
+			children = (
+				4739A3281E904E2B00723846 /* AppDelegate.swift */,
+				4739A32A1E904E2B00723846 /* ViewController.swift */,
+				4739A32C1E904E2B00723846 /* Main.storyboard */,
+				4739A32F1E904E2B00723846 /* Assets.xcassets */,
+				4739A3311E904E2B00723846 /* Info.plist */,
+			);
+			path = tvOSTestApp;
+			sourceTree = "<group>";
+		};
 		476937F61E80C48400F20DD9 = {
 			isa = PBXGroup;
 			children = (
@@ -180,11 +291,15 @@
 				476938141E80C8A600F20DD9 /* Shared */,
 				476938021E80C48400F20DD9 /* CRDKeychainMobile */,
 				4769385C1E80CBAD00F20DD9 /* CRDKeychainMac */,
+				4739A2F51E904B1E00723846 /* CRDKeychainWatch */,
+				4739A3021E904D0700723846 /* CRDKeychainTV */,
 				476938761E80CD1100F20DD9 /* SharedTests */,
 				4769381A1E80C8EB00F20DD9 /* CRDKeychainMobileTests */,
 				4769386A1E80CC5D00F20DD9 /* CRDKeychainMacTests */,
+				4739A3161E904D8E00723846 /* CRDKeychainTVTests */,
 				4769382B1E80C9F000F20DD9 /* iOSTestApp */,
 				476938481E80CB5B00F20DD9 /* macOSTestApp */,
+				4739A3271E904E2B00723846 /* tvOSTestApp */,
 				476938011E80C48400F20DD9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -198,6 +313,10 @@
 				476938471E80CB5B00F20DD9 /* macOSTestApp.app */,
 				4769385B1E80CBAD00F20DD9 /* CRDKeychainMac.framework */,
 				476938691E80CC5D00F20DD9 /* CRDKeychainMacTests.xctest */,
+				4739A2F41E904B1E00723846 /* CRDKeychainWatch.framework */,
+				4739A3011E904D0700723846 /* CRDKeychainTV.framework */,
+				4739A3151E904D8D00723846 /* CRDKeychainTVTests.xctest */,
+				4739A3261E904E2B00723846 /* tvOSTestApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -284,6 +403,22 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		4739A2F11E904B1E00723846 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4739A2F81E904B1E00723846 /* CRDKeychainWatch.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4739A2FE1E904D0700723846 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4739A3051E904D0700723846 /* CRDKeychainTV.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		476937FD1E80C48400F20DD9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -303,6 +438,78 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		4739A2F31E904B1E00723846 /* CRDKeychainWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4739A2FB1E904B1E00723846 /* Build configuration list for PBXNativeTarget "CRDKeychainWatch" */;
+			buildPhases = (
+				4739A2EF1E904B1E00723846 /* Sources */,
+				4739A2F01E904B1E00723846 /* Frameworks */,
+				4739A2F11E904B1E00723846 /* Headers */,
+				4739A2F21E904B1E00723846 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CRDKeychainWatch;
+			productName = CRDKeychainWatch;
+			productReference = 4739A2F41E904B1E00723846 /* CRDKeychainWatch.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4739A3001E904D0700723846 /* CRDKeychainTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4739A3061E904D0700723846 /* Build configuration list for PBXNativeTarget "CRDKeychainTV" */;
+			buildPhases = (
+				4739A2FC1E904D0700723846 /* Sources */,
+				4739A2FD1E904D0700723846 /* Frameworks */,
+				4739A2FE1E904D0700723846 /* Headers */,
+				4739A2FF1E904D0700723846 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CRDKeychainTV;
+			productName = CRDKeychainTV;
+			productReference = 4739A3011E904D0700723846 /* CRDKeychainTV.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4739A3141E904D8D00723846 /* CRDKeychainTVTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4739A31D1E904D8E00723846 /* Build configuration list for PBXNativeTarget "CRDKeychainTVTests" */;
+			buildPhases = (
+				4739A3111E904D8D00723846 /* Sources */,
+				4739A3121E904D8D00723846 /* Frameworks */,
+				4739A3131E904D8D00723846 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4739A31C1E904D8E00723846 /* PBXTargetDependency */,
+				477AD4A21E904EEB00ACD4E4 /* PBXTargetDependency */,
+			);
+			name = CRDKeychainTVTests;
+			productName = CRDKeychainTVTests;
+			productReference = 4739A3151E904D8D00723846 /* CRDKeychainTVTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4739A3251E904E2B00723846 /* tvOSTestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4739A3321E904E2B00723846 /* Build configuration list for PBXNativeTarget "tvOSTestApp" */;
+			buildPhases = (
+				4739A3221E904E2B00723846 /* Sources */,
+				4739A3231E904E2B00723846 /* Frameworks */,
+				4739A3241E904E2B00723846 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tvOSTestApp;
+			productName = tvOSTestApp;
+			productReference = 4739A3261E904E2B00723846 /* tvOSTestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
 		476937FF1E80C48400F20DD9 /* CRDKeychainMobile */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 476938081E80C48400F20DD9 /* Build configuration list for PBXNativeTarget "CRDKeychainMobile" */;
@@ -423,6 +630,27 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Christopher Disdero";
 				TargetAttributes = {
+					4739A2F31E904B1E00723846 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4475S8NVSN;
+						ProvisioningStyle = Automatic;
+					};
+					4739A3001E904D0700723846 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4475S8NVSN;
+						ProvisioningStyle = Automatic;
+					};
+					4739A3141E904D8D00723846 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4475S8NVSN;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4739A3251E904E2B00723846;
+					};
+					4739A3251E904E2B00723846 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4475S8NVSN;
+						ProvisioningStyle = Automatic;
+					};
 					476937FF1E80C48400F20DD9 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 4475S8NVSN;
@@ -476,13 +704,47 @@
 				476938181E80C8EB00F20DD9 /* CRDKeychainMobileTests */,
 				4769385A1E80CBAD00F20DD9 /* CRDKeychainMac */,
 				476938681E80CC5D00F20DD9 /* CRDKeychainMacTests */,
+				4739A2F31E904B1E00723846 /* CRDKeychainWatch */,
+				4739A3001E904D0700723846 /* CRDKeychainTV */,
+				4739A3141E904D8D00723846 /* CRDKeychainTVTests */,
 				476938291E80C9F000F20DD9 /* iOSTestApp */,
 				476938461E80CB5B00F20DD9 /* macOSTestApp */,
+				4739A3251E904E2B00723846 /* tvOSTestApp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4739A2F21E904B1E00723846 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4739A2FF1E904D0700723846 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4739A3131E904D8D00723846 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4739A3241E904E2B00723846 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4739A3301E904E2B00723846 /* Assets.xcassets in Resources */,
+				4739A32E1E904E2B00723846 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		476937FE1E80C48400F20DD9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -533,6 +795,45 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4739A2EF1E904B1E00723846 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4739A30A1E904D3400723846 /* CRDKeychainEntry.swift in Sources */,
+				4739A3091E904D3400723846 /* CRDKeychain.swift in Sources */,
+				4739A30B1E904D3400723846 /* CRDKeychainError.swift in Sources */,
+				4739A30C1E904D3400723846 /* CRDKeychainEntryError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4739A2FC1E904D0700723846 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4739A30E1E904D3500723846 /* CRDKeychainEntry.swift in Sources */,
+				4739A30D1E904D3500723846 /* CRDKeychain.swift in Sources */,
+				4739A30F1E904D3500723846 /* CRDKeychainError.swift in Sources */,
+				4739A3101E904D3500723846 /* CRDKeychainEntryError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4739A3111E904D8D00723846 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4739A3211E904DBA00723846 /* CRDKeychainTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4739A3221E904E2B00723846 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4739A32B1E904E2B00723846 /* ViewController.swift in Sources */,
+				4739A3291E904E2B00723846 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		476937FB1E80C48400F20DD9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -592,6 +893,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		4739A31C1E904D8E00723846 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4739A3001E904D0700723846 /* CRDKeychainTV */;
+			targetProxy = 4739A31B1E904D8E00723846 /* PBXContainerItemProxy */;
+		};
 		476938201E80C8EB00F20DD9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 476937FF1E80C48400F20DD9 /* CRDKeychainMobile */;
@@ -617,9 +923,22 @@
 			target = 476938461E80CB5B00F20DD9 /* macOSTestApp */;
 			targetProxy = 476938741E80CC6300F20DD9 /* PBXContainerItemProxy */;
 		};
+		477AD4A21E904EEB00ACD4E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4739A3251E904E2B00723846 /* tvOSTestApp */;
+			targetProxy = 477AD4A11E904EEB00ACD4E4 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		4739A32C1E904E2B00723846 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4739A32D1E904E2B00723846 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		476938301E80C9F000F20DD9 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -647,6 +966,162 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4739A2F91E904B1E00723846 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4475S8NVSN;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CRDKeychainWatch/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChrisDisdero.CRDKeychainWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = NO;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		4739A2FA1E904B1E00723846 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4475S8NVSN;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CRDKeychainWatch/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChrisDisdero.CRDKeychainWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = NO;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		4739A3071E904D0700723846 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4475S8NVSN;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CRDKeychainTV/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChrisDisdero.CRDKeychainTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = NO;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		4739A3081E904D0700723846 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4475S8NVSN;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CRDKeychainTV/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChrisDisdero.CRDKeychainTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = NO;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		4739A31E1E904D8E00723846 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 4475S8NVSN;
+				INFOPLIST_FILE = CRDKeychainTVTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChrisDisdero.CRDKeychainTVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tvOSTestApp.app/tvOSTestApp";
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Debug;
+		};
+		4739A31F1E904D8E00723846 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 4475S8NVSN;
+				INFOPLIST_FILE = CRDKeychainTVTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChrisDisdero.CRDKeychainTVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tvOSTestApp.app/tvOSTestApp";
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Release;
+		};
+		4739A3331E904E2B00723846 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4475S8NVSN;
+				INFOPLIST_FILE = tvOSTestApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChrisDisdero.tvOSTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		4739A3341E904E2B00723846 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4475S8NVSN;
+				INFOPLIST_FILE = tvOSTestApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChrisDisdero.tvOSTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
 		476938061E80C48400F20DD9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -967,6 +1442,42 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4739A2FB1E904B1E00723846 /* Build configuration list for PBXNativeTarget "CRDKeychainWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4739A2F91E904B1E00723846 /* Debug */,
+				4739A2FA1E904B1E00723846 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4739A3061E904D0700723846 /* Build configuration list for PBXNativeTarget "CRDKeychainTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4739A3071E904D0700723846 /* Debug */,
+				4739A3081E904D0700723846 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4739A31D1E904D8E00723846 /* Build configuration list for PBXNativeTarget "CRDKeychainTVTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4739A31E1E904D8E00723846 /* Debug */,
+				4739A31F1E904D8E00723846 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4739A3321E904E2B00723846 /* Build configuration list for PBXNativeTarget "tvOSTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4739A3331E904E2B00723846 /* Debug */,
+				4739A3341E904E2B00723846 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		476937FA1E80C48400F20DD9 /* Build configuration list for PBXProject "CRDKeychain" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
