@@ -11,8 +11,9 @@ Pod::Spec.new do |s|
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
 
+  s.swift_version = '4.2'
   s.name         = "CRDKeychain"
-  s.version      = "1.0.6"
+  s.version      = "1.0.7"
   s.summary      = "Simple straightforward Swift-based keychain access framework for iOS, macOS, watchOS, and tvOS"
   s.description  = <<-DESC
 I recently had a need to create a way to access the Apple keychain from within a Swift-based app I was developing.  Although there are several comprehensive libraries out there for this very purpose, I found that they were fairly complex and involved a lot of code.  I needed something that was small and compact and easy to add to any project, just by dropping in a few files.  I decided to create my own as a cocoa framework and cocoapod that will work with a consistent interface across iOS, macOS, watchOS, and tvOS Swift-based projects.
@@ -34,7 +35,7 @@ DESC
   #
 
   s.ios.deployment_target = "9.0"
-  s.osx.deployment_target = "10.11"
+  s.osx.deployment_target = "10.12"
   s.watchos.deployment_target = "3.0"
   s.tvos.deployment_target = "9.0"
 
@@ -46,6 +47,10 @@ DESC
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
 
-  s.source_files  = "Shared/*.swift"
+s.source_files  = "Shared/*.swift"
+s.ios.source_files   = 'CRDKeychainMobile/*.h'
+s.osx.source_files   = 'CRDKeychainMac/*.h'
+s.watchos.source_files = 'CRDKeychainWatch/*.h'
+s.tvos.source_files  = 'CRDKeychainTV/*.h'
 
 end

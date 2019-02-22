@@ -16,9 +16,9 @@ Simple straightforward Swift-based keychain access framework for iOS, macOS, wat
 I recently had a need to create a way to access the Apple keychain from within a Swift-based app I was developing.  Although there are several comprehensive libraries out there for this very purpose, I found that they were fairly complex and involved a lot of code.  I needed something that was small and compact and easy to add to any project, just by dropping in a few files.  I decided to create my own as a cocoa framework and cocoapod that will work with a consistent interface across iOS, macOS, watchOS, and tvOS Swift-based projects.
 
 ## Requirements
-- iOS 9.0+ / macOS 10.11+ / watchOS 3.0+ / tvOS 9.0+
-- Xcode 8.2+
-- Swift 3.0+
+- iOS 9.0+ / macOS 10.12+ / watchOS 3.0+ / tvOS 9.0+
+- Xcode 10.1+
+- Swift 4.0+
 
 ## Installation
 You can use this code library in your project by simply adding these files from the **Shared** folder to your Swift project:
