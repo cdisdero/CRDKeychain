@@ -17,8 +17,8 @@ I recently had a need to create a way to access the Apple keychain from within a
 
 ## Requirements
 - iOS 9.0+ / macOS 10.12+ / watchOS 3.0+ / tvOS 9.0+
-- Xcode 10.1+
-- Swift 4.0+
+- Xcode 10.2+
+- Swift 5.0+
 
 ## Installation
 You can use this code library in your project by simply adding these files from the **Shared** folder to your Swift project:
@@ -44,7 +44,7 @@ Alternatively, you can install it as a Cocoapod
 $ gem install cocoapods
 ```
 
-> CocoaPods 1.1.0+ is required to build CRDKeychain.
+> CocoaPods 1.7.0+ is required to build CRDKeychain.
 
 To integrate CRDKeychain into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
